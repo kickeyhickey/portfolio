@@ -136,7 +136,9 @@ header {
 
 .nav {
     position: fixed;
+    backdrop-filter: 20px;
     background: var(--clr-dark);
+    opacity: 92%;
     color: var(--clr-light);
     top: 0;
     bottom: 0;
@@ -175,7 +177,7 @@ header {
 }
 
 .nav-toggle {
-    padding: .5em;
+    padding: 1em;
     background: transparent;
     border: 0;
     cursor: pointer;
@@ -183,6 +185,8 @@ header {
     right: 1em;
     top: 1em;
     z-index: 1000;
+    margin-right: 20px;
+    margin-top: 30px;
 }
 
 .nav-open .nav {
@@ -195,13 +199,6 @@ header {
 
 .nav-open .hamburger {
     background: var(--clr-accent);
-}
-
-.nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px)
-}
-.nav-open .hamburger::after {
-    opacity: 0;
 }
 
 
@@ -227,11 +224,12 @@ header {
     position: apsolute;
     left: 0;
     right: 0;
+    /* top: 6px; */
+    /* bottom: 6px; */
 }
 
 .hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
-
+.hamburger::after{ bottom: 6px; }
 
 
 
@@ -406,6 +404,74 @@ header {
     transform: scale(1.2);
     opacity: .75;
 }
+
+
+
+
+
+/* individual pages */
+
+.my-work-individual{
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+    
+}
+
+.section__subtitle--work{
+    columns: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    text-align: center;
+}
+/* here */
+.portfolio-individual {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap
+}
+.portfolio__item-individual {
+    flex-grow: 2
+}
+
+.card-individual {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(17, 17, 26, 0.8) 0px 0px 16px;
+  background-color: white;
+  transition: transform 0.7s ease;
+}
+
+.card-individual p {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.portfolio__img-individual {
+    width: 630px;
+    height: 700px;
+    object-fit: cover;
+    box-shadow: 16px 16px 8px -10px var(--accent);
+} 
+
+ .portfolio__item-individual:focus {
+    position: relative;
+    z-index: 2;
+} 
+
+.card-individual:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
 
 /* FOOTER */
 
