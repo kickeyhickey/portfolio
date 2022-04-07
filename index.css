@@ -185,8 +185,8 @@ header {
     right: 1em;
     top: 1em;
     z-index: 1000;
-    margin-right: 20px;
-    margin-top: 30px;
+    /* margin-right: 20px; */
+    /* margin-top: 30px; */
 }
 
 .nav-open .nav {
@@ -205,13 +205,14 @@ header {
 .hamburger {
     display: block;
     position: relative;
+    margin-bottom: 5px;
 }
 
 .hamburger,
 .hamburger::before,
 .hamburger::after {
     background: var(--clr-dark);
-    width: 2em;
+    width: 3em;
     height: 3px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
@@ -224,8 +225,8 @@ header {
     position: apsolute;
     left: 0;
     right: 0;
-    /* top: 6px; */
-    /* bottom: 6px; */
+    /* top: 6px;
+    bottom: 6px; */
 }
 
 .hamburger::before { top: 6px; }
